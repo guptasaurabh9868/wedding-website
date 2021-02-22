@@ -35,7 +35,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        #ladkiwale, #ladkewale, #toggle{
+            display: none;
+        }
+    </style>
 </head>
 <body id="top">
 <!--[if lt IE 8]>
@@ -50,15 +55,16 @@
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
-                            <li><a href="#intro">Invitation</a></li>
-                            <li><a href="#events">Golden Moments</a></li>
-                            <li><a href="#SpecInvitation">Special Invitation</a></li>
-                            <li><a href="#family">Family</a></li>
-                            <li><a href="#extendedfamily">Extended Family</a></li>
-                            <li><a href="#eng-pics">Engagement Pics</a></li>
-                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
+                            <section id="toggle">
+                                <li><a href="#intro">Invitation</a></li>
+                                <li><a href="#events">Golden Moments</a></li>
+                                <li><a href="#SpecInvitation">Special Invitation</a></li>
+                                <li><a href="#family">Family</a></li>
+                                <li><a href="#extendedfamily">Extended Family</a></li>
+                            </section>
                         </ul>
                         <ul class="member-actions">
+                            <li><a href="#eng-pics">Gallery</a></li>
                             <li><a href="#map" class="login">Venue</a></li>
                             <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
                         </ul>
@@ -104,329 +110,632 @@
         </div>
     </div>
 </section>
-
-<section id="intro">
+<section id="toggling">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <h3 class="header" style="font-family: 'Dancing Script', cursive; font-size: 40px;">Invitation</h3>
+            <div class="col-md-4 col-sm-2"></div>
+            <div class="col-md-2 col-sm-4 col-xs-6" style="padding-left: 55px">
+                <button type="button" class="btn btn-outline-primary"  onclick="ladkewale()"><i>Ladkewale</i></button>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>Mrs. Rajesh Rani(Lali)  </h3>  & <h3> Mr. Ashok Gupta </h3> <p style="font-family: 'Dancing Script', cursive; font-size: 30px;"> solicit your blessings 
-                    and request the pleasure of your company at the Wedding Ceremony of their Son </p>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <button type="button" class="btn btn-outline-danger" style="position: relative;" onclick="ladkiwale()"><i>Ladkiwale</i></button>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-3 hidden-sm hidden-xs" ><img src="img/DSD_0214.jpg" class="wp1"></div>
-            <div class="col-md-6 hidden-sm hidden-xs">.</div>
-            <div class="col-md-3 hidden-sm hidden-xs" ><img src="img/IMG_2317.png" class="wp2"> </div>
-        </div>
-        <div class="row">
-            <div class="col-md-5 hidden-sm hidden-xs">
-                <h2 class="wp1" style="font-family: 'Dancing Script', cursive; font-size: 30px;">Saurabh</h2>
-                <p class="wp1" style="font-family: 'Dancing Script', cursive; font-size: 20px;">(Grandson of Late Shrimati Shanti Devi & Late Shri Ramji lal)</p>
-            </div>
-            <div class="col-md-2 hidden-sm hidden-xs">
-                <p style="font-family: 'Dancing Script', cursive; font-size: 30px; padding-top: 100px;">
-                    with
-                </p>
-            </div>
-            <div class="col-md-5 hidden-sm hidden-xs">
-                <h2 class="wp2" style="font-family: 'Dancing Script', cursive; font-size: 30px;">Aditi</h2>
-                <p class="wp2" style="font-family: 'Dancing Script', cursive; font-size: 30px;">(D/o Mrs. Anita & Mr. Maneet Varshney)</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-4 col-sm-push-2 col-xs-4 hidden-md hidden-lg"><img src="img/DSD_0214.jpg" class="wp9">
-                <h2 class="wp1" style="font-family: 'Dancing Script', cursive;">Saurabh</h2>
-                <p class="wp1" style="font-family: 'Dancing Script', cursive;">(Grandson of Late Shrimati Shanti Devi & Late Shri Ramji lal)</p>
-            </div>
-            <div class="col-sm-4 col-xs-4 hidden-md hidden-lg">
-                <p style="font-family: 'Dancing Script', cursive; font-size: 20px; padding-top: 100px;">
-                    with
-                </p>
-            </div>
-            <div class="col-sm-4 col-sm-push-2 col-xs-4 hidden-md hidden-lg"><img src="img/IMG_2317.png" class="wp8">
-                <h2 class="wp2" style="font-family: 'Dancing Script', cursive;">Aditi</h2>
-                <p class="wp2" style="font-family: 'Dancing Script', cursive;">(D/o Mrs. Anita & Mr. Maneet Varshney)</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <p style="font-family: 'Dancing Script', cursive; font-size: 20px;">
-                    Come and celebrate with us amid music, dance, fun, feast, laughter, 
-                    joy and lots of love. Grace us with your presence and shower the new 
-                    couple with wishes and blessings as they embark upon a new journey.
-                </p>
-            </div>
+            <div class="col-md-4 col-sm-2"></div>
         </div>
     </div>
 </section>
+<section id="ladkewale">
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header" style="font-family: 'Dancing Script', cursive; font-size: 40px;">Invitation</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>Mrs. Rajesh Rani(Lali)  </h3>  & <h3> Mr. Ashok Gupta </h3> <p style="font-family: 'Dancing Script', cursive; font-size: 30px;"> solicit your blessings 
+                        and request the pleasure of your company at the Wedding Ceremony of their Son </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 hidden-sm hidden-xs" ><img src="img/DSD_0214.jpg" class="wp1"></div>
+                <div class="col-md-6 hidden-sm hidden-xs">.</div>
+                <div class="col-md-3 hidden-sm hidden-xs" ><img src="img/IMG_2317.png" class="wp2"> </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 hidden-sm hidden-xs">
+                    <h2 class="wp1" style="font-family: 'Dancing Script', cursive; font-size: 30px;">Saurabh</h2>
+                    <p class="wp1" style="font-family: 'Dancing Script', cursive; font-size: 20px;">(Grandson of Late Shrimati Shanti Devi & Late Shri Ramji lal)</p>
+                </div>
+                <div class="col-md-2 hidden-sm hidden-xs">
+                    <p style="font-family: 'Dancing Script', cursive; font-size: 30px; padding-top: 100px;">
+                        with
+                    </p>
+                </div>
+                <div class="col-md-5 hidden-sm hidden-xs">
+                    <h2 class="wp2" style="font-family: 'Dancing Script', cursive; font-size: 30px;">Aditi</h2>
+                    <p class="wp2" style="font-family: 'Dancing Script', cursive; font-size: 30px;">(D/o Mrs. Anita & Mr. Maneet Varshney)</p>
+                </div>
+            </div>
 
-<section class="events section-padding" id="events">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="header">Golden Moments</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
-                <div class="wp3">
-                    <h3><strong>28th April</strong></h3>
-                    <div class="row card">
-                        <div class="col-md-4">
-                            <h5>Kirtan</h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5> <span class="time">02:00 PM</span> </h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Ghar ke Aangan me</h5>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-sm-4 col-sm-push-2 col-xs-4 hidden-md hidden-lg"><img src="img/DSD_0214.jpg" class="wp9">
+                    <h2 class="wp1" style="font-family: 'Dancing Script', cursive;">Saurabh</h2>
+                    <p class="wp1" style="font-family: 'Dancing Script', cursive;">(Grandson of Late Shrimati Shanti Devi & Late Shri Ramji lal)</p>
                 </div>
-                <div class="wp3">
-                    <h3><strong>1st May</strong></h3>
-                    <div class="row card">
-                        <div class="col-md-4">
-                            <h5>Bade Geet</h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5> <span class="time">03:00 PM</span> </h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Ghar ki Char Diwari me</h5>
-                        </div>
-                    </div>
-                    <div class="row card">
-                        <div class="col-md-4">
-                            <h5>DJ Dance</h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5> <span class="time">07:00 PM</span> </h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Ghar ke Dance Floor pe</h5>
-                        </div>
-                    </div>
+                <div class="col-sm-4 col-xs-4 hidden-md hidden-lg">
+                    <p style="font-family: 'Dancing Script', cursive; font-size: 20px; padding-top: 100px;">
+                        with
+                    </p>
+                </div>
+                <div class="col-sm-4 col-sm-push-2 col-xs-4 hidden-md hidden-lg"><img src="img/IMG_2317.png" class="wp8">
+                    <h2 class="wp2" style="font-family: 'Dancing Script', cursive;">Aditi</h2>
+                    <p class="wp2" style="font-family: 'Dancing Script', cursive;">(D/o Mrs. Anita & Mr. Maneet Varshney)</p>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
-                <div class="wp4">
-                    <h3><strong>2nd May</strong></h3>
-                    <div class="row card">
-                        <div class="col-md-4">
-                            <h5>Ghur Chari</h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5> <span class="time">02:00 PM</span> </h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Ghar ke Aangan me</h5>
-                        </div>
-                    </div>
-                    <div class="row card">
-                        <div class="col-md-4">
-                            <h5>Baraat Prasthan</h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5> <span class="time">05:00 PM</span> </h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Ghar ki chaukhat se</h5>
-                        </div>
-                    </div>
-                    <div class="row card">
-                        <div class="col-md-4">
-                            <h5>Dinner</h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5> <span class="time">07:00 PM</span> </h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Devansh Greens Farms</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="wp6">
-                    <h3><strong>3rd May</strong></h3>
-                    <div class="row card">
-                        <div class="col-md-4">
-                            <h5>Vadhu Swaagat</h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5> <span class="time">07:00 AM</span> </h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Ghar ke chaukhat pe</h5>
-                        </div>
-                    </div>
-                    <div class="row card">
-                        <div class="col-md-4">
-                            <h5>Ladies Sangeet </h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5> <span class="time">03:00 PM</span> </h5>
-                        </div>
-                        <div class="col-md-4">
-                            <h5>Ghar ki Char Diwari me</h5>
-                        </div>
-                    </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-family: 'Dancing Script', cursive; font-size: 20px;">
+                        Come and celebrate with us amid music, dance, fun, feast, laughter, 
+                        joy and lots of love. Grace us with your presence and shower the new 
+                        couple with wishes and blessings as they embark upon a new journey.
+                    </p>
                 </div>
             </div>
         </div>
-        <div class="row section-padding" id="SpecInvitation">
-            <div class="col-md-4 col-md-offset-4 text-center">
-                <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
-                    <i class="fa fa-barcode"></i>&nbsp;&nbsp;Special Invitation from our family's baby doll
-                </a>
-            </div>
-        </div>
-        <!--<div class="row">
-            <div class="col-xs-12 section-border section-padding">
-            </div>
-        </div>-->
-    </div>
+    </section>
 
-    <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <h3 class="text-center section-padding">Samisha The Doll</h3>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <img src="img/samisha1.jpeg" style="height: 100%; width: 50%; display: block; margin-left: auto; margin-right: auto;">
-                            <p style="display: block; text-align: center; margin-top: 10%; padding-bottom: 0px;">Nanhe Nanhe Pawn Hai Mere, Kese Aayu Bulane ko,</br> Mele Mamu Ki Chhadi Mein Bhool Na Jana Aane Ko.</p>
+    <section class="events section-padding" id="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="header">Golden Moments</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                    <div class="wp3">
+                        <h3><strong>28th April</strong></h3>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>Kirtan</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">02:00 PM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Ghar ke Aangan me</h5>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="text-center section-padding">Prince Pratham & Princess Kanak</h3>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <img src="img/samisha1.jpeg" style="height: 100%; width: 50%; display: block; margin-left: auto; margin-right: auto;">
-                            <p style="display: block; text-align: center; margin-top: 10%; padding-bottom: 0px;">Nanhe Nanhe Pawn Hai Mere, Kese Aayu Bulane ko,</br> Mele Mamu Ki Chhadi Mein Bhool Na Jana Aane Ko.</p>
+                    <div class="wp3">
+                        <h3><strong>1st May</strong></h3>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>Bade Geet</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">03:00 PM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Ghar ki Char Diwari me</h5>
+                            </div>
+                        </div>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>DJ Dance</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">07:00 PM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Ghar ke Dance Floor pe</h5>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-</section>
-
-<!-- <section id="instagram" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>A picture is worth a thousand words!</h3>
-                <p>Help us capture the moment, tag your photos with the hashtag
-                    <a href="https://instagram.com/explore/tags/SaurabhandAditi/" target="_blank">#SaurabhAndAditi</a>
-                </p>
-            </div>
-        </div>
-        <div class="row section-border wp7">
-            <div class="col-md-4 col-md-offset-4">
-                <img src="img/iphone_instagram.jpg">
-            </div>
-        </div>
-    </div>
-</section> -->
-<section id="family" class="section-padding">
-    <div class="container">
-        <h1 style="text-align: center;">Family</h1>
-        <div class="row">
-            <div class="col-md-3 col-xs-6">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/family/family.JPG" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
-                    <div class="card-body">
-                      <h4 class="card-title">Mummy-Papa</h4>
-                      <h5 class="card-subtitle">Mrs. Rajesh Rani & Mr. Ashok Gupta </h5>
-                      <p class="card-text">Bete ki shadi m jarur aana h sbko</p>
-                      <a href="https://fb.com" class="btn btn-primary">Facebook profile</a>
+                <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                    <div class="wp4">
+                        <h3><strong>2nd May</strong></h3>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>Ghur Chari</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">02:00 PM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Ghar ke Aangan me</h5>
+                            </div>
+                        </div>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>Baraat Prasthan</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">05:00 PM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Ghar ki chaukhat se</h5>
+                            </div>
+                        </div>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>Dinner</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">07:00 PM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Devansh Greens Farms</h5>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-            </div>
-            <div class="col-md-3 col-xs-6">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/family/family.JPG" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
-                    <div class="card-body">
-                      <h4 class="card-title">Bhaiya-Bhabhi</h4>
-                      <h5 class="card-subtitle">Mrs. Nisha & Gaurav Gupta</h5>
-                      <p class="card-text">Bhai ki shadi m jarur aana h sbko</p>
-                      <a href="https://fb.com" class="btn btn-primary">Facebook profile</a>
+                    <div class="wp6">
+                        <h3><strong>3rd May</strong></h3>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>Vadhu Swaagat</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">07:00 AM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Ghar ke chaukhat pe</h5>
+                            </div>
+                        </div>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>Ladies Sangeet </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">03:00 PM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Ghar ki Char Diwari me</h5>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-            </div>
-            <div class="col-md-3 col-xs-6">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/family/family.JPG" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
-                    <div class="card-body">
-                      <h4 class="card-title">Didi-Jiju</h4>
-                      <h5 class="card-subtitle">Mrs. Monika & Siddhartha krishan Gupta</h5>
-                      <p class="card-text">Saale sahab ki shadi m jarur aana h sbko</p>
-                      <a href="https://fb.com" class="btn btn-primary">Facebook profile</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-md-3 col-xs-6">
-                <div class="card" style="width: 18rem;">
-                    <img src="img/family/family.JPG" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
-                    <div class="card-body">
-                      <h4 class="card-title">Bhai</h4>
-                      <h5 class="card-subtitle">Mr. Sumit Gupta</h5>
-                      <p class="card-text">Bhaiya ki shadi m jarur aana h sbko</p>
-                      <a href="https://fb.com" class="btn btn-primary">Facebook profile</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
-</section>
-<section id="extendedfamily" class="section-padding">
-    <div class="container"></div>
-    <h2 style="text-align: center;">Extended-Family</h2>
-    <div class="row">
-        <div class="col-md-2"></div>
-            <div class="col-md-4">
-                <div class="godfathers-text-men firstDiv">
-                  <p><strong>Mrs. Usha &amp; Mr. Jagdish Prasad Varshney</strong><br>
-                    <em>Taiji  &amp; Tauji</em></p>
-                  <p><strong>Mrs. Neelam &amp; Mr. Subhash Gupta</strong><br>
-                    <em>Chachiji  &amp; Chachaji</em></p>
-                  <p><strong>Mrs. Sangeeta &amp; Mr. Jitendra Varshney</strong><br>
-                    <em>Bhabhi  &amp; Bhaiya</em></p>
-                  <p><strong>Late Mrs. Kanti Devi  &amp; Mr. Murari lal</strong><br>
-                    <em>Buaji  &amp; Fufaji</em></p>
-                  <p><strong> Mrs. Radha Rani  &amp; Mr. Rajkumar Varshney</strong><br>
-                    <em>Buaji  &amp; Fufaji</em></p>
-                  <p><strong>Mrs. Rajkumari  &amp;Late Mr. Promod Varshney</strong><br>
-                    <em>Buaji  &amp; Fufaji</em></p>
                 </div>
-            </div><!--end col-md-4-->
-        
-            <div class="col-md-4">
-                <div class="godfathers-text-men">
-                  <p><strong>Mrs. Kunti Devi &amp;Late Mr. Satish Chand </strong><br>
-                    <em>Buaji  &amp; Fufaji</em></p>
-                  <p><strong>Mrs. Sunita &amp; Mr. Sonpal Gupta </strong><br>
-                    <em>Buaji  &amp; Fufaji</em></p>
-                  <p><strong>Mrs. Maya &amp; Mr. Jagdish Prasad Varshney</strong><br>
-                    <em>Mausiji  &amp; Mausaji</em></p>
-                  <p><strong>Mrs. Mithlesh &amp; Mr. Manohar lal Varshney</strong><br>
-                    <em>Mausiji  &amp; Mausaji</em></p>
-                  <p><strong>Mrs. Mithlesh &amp; Mr. Rupendra Gupta</strong><br>
-                    <em>Mausiji  &amp; Mausaji</em></p>
+            </div>
+            <div class="row section-padding" id="SpecInvitation">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                        <i class="fa fa-barcode"></i>&nbsp;&nbsp;Special Invitation from our family's baby doll
+                    </a>
+                </div>
+            </div>
+            <!--<div class="row">
+                <div class="col-xs-12 section-border section-padding">
+                </div>
+            </div>-->
+        </div>
+
+        <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                        </button>
+                        <h3 class="text-center section-padding">Samisha The Doll</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="img/samisha1.jpeg" style="height: 100%; width: 50%; display: block; margin-left: auto; margin-right: auto;">
+                                <p style="display: block; text-align: center; margin-top: 10%; padding-bottom: 0px;">Nanhe Nanhe Pawn Hai Mere, Kese Aayu Bulane ko,</br> Mele Mamu Ki Chhadi Mein Bhool Na Jana Aane Ko.</p>
+                            </div>
+                        </div>
+                        <h3 class="text-center section-padding">Prince Pratham & Princess Kanak</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="img/samisha1.jpeg" style="height: 100%; width: 50%; display: block; margin-left: auto; margin-right: auto;">
+                                <p style="display: block; text-align: center; margin-top: 10%; padding-bottom: 0px;">Nanhe Nanhe Pawn Hai Mere, Kese Aayu Bulane ko,</br> Mele Mamu Ki Chhadi Mein Bhool Na Jana Aane Ko.</p>
+                            </div>
+                        </div>
                     </div>
-            </div><!--end col-md-4-->
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+    </section>
+
+    <section id="family" class="section-padding">
+        <div class="container">
+            <h1 style="text-align: center;">Family</h1>
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/family/family.JPG" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
+                        <div class="card-body">
+                        <h4 class="card-title">Mummy-Papa</h4>
+                        <h5 class="card-subtitle">Mrs. Rajesh Rani & Mr. Ashok Gupta </h5>
+                        <p class="card-text">Bete ki shadi m jarur aana h sbko</p>
+                        <a href="https://fb.com" class="btn btn-primary">Facebook profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/family/family.JPG" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
+                        <div class="card-body">
+                        <h4 class="card-title">Bhaiya-Bhabhi</h4>
+                        <h5 class="card-subtitle">Mrs. Nisha & Gaurav Gupta</h5>
+                        <p class="card-text">Bhai ki shadi m jarur aana h sbko</p>
+                        <a href="https://fb.com" class="btn btn-primary">Facebook profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/family/family.JPG" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
+                        <div class="card-body">
+                        <h4 class="card-title">Didi-Jiju</h4>
+                        <h5 class="card-subtitle">Mrs. Monika & Siddhartha krishan Gupta</h5>
+                        <p class="card-text">Saale sahab ki shadi m jarur aana h sbko</p>
+                        <a href="https://fb.com" class="btn btn-primary">Facebook profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/family/family.JPG" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
+                        <div class="card-body">
+                        <h4 class="card-title">Bhai</h4>
+                        <h5 class="card-subtitle">Mr. Sumit Gupta</h5>
+                        <p class="card-text">Bhaiya ki shadi m jarur aana h sbko</p>
+                        <a href="https://fb.com" class="btn btn-primary">Facebook profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="extendedfamily" class="section-padding">
+        <div class="container"></div>
+        <h2 style="text-align: center;">Extended-Family</h2>
+        <div class="row">
             <div class="col-md-2"></div>
-        </div>
+                <div class="col-md-4">
+                    <div class="godfathers-text-men firstDiv">
+                    <p><strong>Mrs. Usha &amp; Mr. Jagdish Prasad Varshney</strong><br>
+                        <em>Taiji  &amp; Tauji</em></p>
+                    <p><strong>Mrs. Neelam &amp; Mr. Subhash Gupta</strong><br>
+                        <em>Chachiji  &amp; Chachaji</em></p>
+                    <p><strong>Mrs. Sangeeta &amp; Mr. Jitendra Varshney</strong><br>
+                        <em>Bhabhi  &amp; Bhaiya</em></p>
+                    <p><strong>Late Mrs. Kanti Devi  &amp; Mr. Murari lal</strong><br>
+                        <em>Buaji  &amp; Fufaji</em></p>
+                    <p><strong> Mrs. Radha Rani  &amp; Mr. Rajkumar Varshney</strong><br>
+                        <em>Buaji  &amp; Fufaji</em></p>
+                    <p><strong>Mrs. Rajkumari  &amp;Late Mr. Promod Varshney</strong><br>
+                        <em>Buaji  &amp; Fufaji</em></p>
+                    </div>
+                </div><!--end col-md-4-->
+            
+                <div class="col-md-4">
+                    <div class="godfathers-text-men">
+                    <p><strong>Mrs. Kunti Devi &amp;Late Mr. Satish Chand </strong><br>
+                        <em>Buaji  &amp; Fufaji</em></p>
+                    <p><strong>Mrs. Sunita &amp; Mr. Sonpal Gupta </strong><br>
+                        <em>Buaji  &amp; Fufaji</em></p>
+                    <p><strong>Mrs. Maya &amp; Mr. Jagdish Prasad Varshney</strong><br>
+                        <em>Mausiji  &amp; Mausaji</em></p>
+                    <p><strong>Mrs. Mithlesh &amp; Mr. Manohar lal Varshney</strong><br>
+                        <em>Mausiji  &amp; Mausaji</em></p>
+                    <p><strong>Mrs. Mithlesh &amp; Mr. Rupendra Gupta</strong><br>
+                        <em>Mausiji  &amp; Mausaji</em></p>
+                        </div>
+                </div><!--end col-md-4-->
+                <div class="col-md-2"></div>
+            </div>
+    </section>
 </section>
+<section id="ladkiwale">
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header" style="font-family: 'Dancing Script', cursive; font-size: 40px;">Invitation</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3>Mrs. Anita Varshney  </h3>  & <h3> Mr. Maneet Varshney </h3> <p style="font-family: 'Dancing Script', cursive; font-size: 30px;"> solicit your blessings 
+                        and request the pleasure of your company at the Wedding Ceremony of their Daughter </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 hidden-sm hidden-xs" ><img src="img/IMG_2317.png" class="wp1"></div>
+                <div class="col-md-6 hidden-sm hidden-xs">.</div>
+                <div class="col-md-3 hidden-sm hidden-xs" ><img src="img/DSD_0214.jpg" class="wp2"> </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 hidden-sm hidden-xs">
+                    <h2 class="wp1" style="font-family: 'Dancing Script', cursive; font-size: 30px;">Aditi</h2>
+                    <p class="wp1" style="font-family: 'Dancing Script', cursive; font-size: 20px;">(GrandDaughter of Late Shrimati Shanti Devi & Late Shri Ramji lal)</p>
+                </div>
+                <div class="col-md-2 hidden-sm hidden-xs">
+                    <p style="font-family: 'Dancing Script', cursive; font-size: 30px; padding-top: 100px;">
+                        with
+                    </p>
+                </div>
+                <div class="col-md-5 hidden-sm hidden-xs">
+                    <h2 class="wp2" style="font-family: 'Dancing Script', cursive; font-size: 30px;">Aditi</h2>
+                    <p class="wp2" style="font-family: 'Dancing Script', cursive; font-size: 30px;">(D/o Mrs. Anita & Mr. Maneet Varshney)</p>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-sm-4 col-sm-push-2 col-xs-4 hidden-md hidden-lg"><img src="img/IMG_2317.png" class="wp9">
+                    <h2 class="wp1" style="font-family: 'Dancing Script', cursive;">Aditi</h2>
+                    <p class="wp1" style="font-family: 'Dancing Script', cursive;">(Grandson of Late Shrimati Shanti Devi & Late Shri Ramji lal)</p>
+                </div>
+                <div class="col-sm-4 col-xs-4 hidden-md hidden-lg">
+                    <p style="font-family: 'Dancing Script', cursive; font-size: 20px; padding-top: 100px;">
+                        with
+                    </p>
+                </div>
+                <div class="col-sm-4 col-sm-push-2 col-xs-4 hidden-md hidden-lg"><img src="img/DSD_0214.jpg" class="wp8">
+                    <h2 class="wp2" style="font-family: 'Dancing Script', cursive;">Saurabh</h2>
+                    <p class="wp2" style="font-family: 'Dancing Script', cursive;">(S/o Mrs. Rajesh Rani & Mr. Ashok Gupta)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p style="font-family: 'Dancing Script', cursive; font-size: 20px;">
+                        Come and celebrate with us amid music, dance, fun, feast, laughter, 
+                        joy and lots of love. Grace us with your presence and shower the new 
+                        couple with wishes and blessings as they embark upon a new journey.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="events section-padding" id="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3 class="header">Golden Moments</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                    <div class="wp3">
+                        <h3><strong>28th April</strong></h3>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>Kirtan</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">02:00 PM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Ghar ke Aangan me</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wp3">
+                        <h3><strong>1st May</strong></h3>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>Bade Geet</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">03:00 PM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Ghar ki Char Diwari me</h5>
+                            </div>
+                        </div>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>DJ Dance</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">07:00 PM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Ghar ke Dance Floor pe</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                    <div class="wp4">
+                        <h3><strong>2nd May</strong></h3>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>Ghur Chari</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">02:00 PM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Ghar ke Aangan me</h5>
+                            </div>
+                        </div>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>Baraat Prasthan</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">05:00 PM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Ghar ki chaukhat se</h5>
+                            </div>
+                        </div>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>Dinner</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">07:00 PM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Devansh Greens Farms</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wp6">
+                        <h3><strong>3rd May</strong></h3>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>Vadhu Swaagat</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">07:00 AM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Ghar ke chaukhat pe</h5>
+                            </div>
+                        </div>
+                        <div class="row card">
+                            <div class="col-md-4">
+                                <h5>Ladies Sangeet </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5> <span class="time">03:00 PM</span> </h5>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Ghar ki Char Diwari me</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row section-padding" id="SpecInvitation">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                        <i class="fa fa-barcode"></i>&nbsp;&nbsp;Special Invitation from our family's baby doll
+                    </a>
+                </div>
+            </div>
+            <!--<div class="row">
+                <div class="col-xs-12 section-border section-padding">
+                </div>
+            </div>-->
+        </div>
+
+        <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                        </button>
+                        <h3 class="text-center section-padding">Samisha The Doll</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="img/samisha1.jpeg" style="height: 100%; width: 50%; display: block; margin-left: auto; margin-right: auto;">
+                                <p style="display: block; text-align: center; margin-top: 10%; padding-bottom: 0px;">Nanhe Nanhe Pawn Hai Mere, Kese Aayu Bulane ko,</br> Mele Mamu Ki Chhadi Mein Bhool Na Jana Aane Ko.</p>
+                            </div>
+                        </div>
+                        <h3 class="text-center section-padding">Prince Pratham & Princess Kanak</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <img src="img/samisha1.jpeg" style="height: 100%; width: 50%; display: block; margin-left: auto; margin-right: auto;">
+                                <p style="display: block; text-align: center; margin-top: 10%; padding-bottom: 0px;">Nanhe Nanhe Pawn Hai Mere, Kese Aayu Bulane ko,</br> Mele Mamu Ki Chhadi Mein Bhool Na Jana Aane Ko.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+    </section>
+
+    <section id="family" class="section-padding">
+        <div class="container">
+            <h1 style="text-align: center;">Family</h1>
+            <div class="row">
+                <div class="col-md-3 col-xs-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/family/family.JPG" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
+                        <div class="card-body">
+                        <h4 class="card-title">Mummy-Papa</h4>
+                        <h5 class="card-subtitle">Mrs. Rajesh Rani & Mr. Ashok Gupta </h5>
+                        <p class="card-text">Bete ki shadi m jarur aana h sbko</p>
+                        <a href="https://fb.com" class="btn btn-primary">Facebook profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/family/family.JPG" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
+                        <div class="card-body">
+                        <h4 class="card-title">Bhaiya-Bhabhi</h4>
+                        <h5 class="card-subtitle">Mrs. Nisha & Gaurav Gupta</h5>
+                        <p class="card-text">Bhai ki shadi m jarur aana h sbko</p>
+                        <a href="https://fb.com" class="btn btn-primary">Facebook profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/family/family.JPG" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
+                        <div class="card-body">
+                        <h4 class="card-title">Didi-Jiju</h4>
+                        <h5 class="card-subtitle">Mrs. Monika & Siddhartha krishan Gupta</h5>
+                        <p class="card-text">Saale sahab ki shadi m jarur aana h sbko</p>
+                        <a href="https://fb.com" class="btn btn-primary">Facebook profile</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-6">
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/family/family.JPG" class="card-img-top" alt="..." style="width: 100%; height: 100%;">
+                        <div class="card-body">
+                        <h4 class="card-title">Bhai</h4>
+                        <h5 class="card-subtitle">Mr. Sumit Gupta</h5>
+                        <p class="card-text">Bhaiya ki shadi m jarur aana h sbko</p>
+                        <a href="https://fb.com" class="btn btn-primary">Facebook profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="extendedfamily" class="section-padding">
+        <div class="container"></div>
+        <h2 style="text-align: center;">Extended-Family</h2>
+        <div class="row">
+            <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <div class="godfathers-text-men firstDiv">
+                    <p><strong>Mrs. Usha &amp; Mr. Jagdish Prasad Varshney</strong><br>
+                        <em>Taiji  &amp; Tauji</em></p>
+                    <p><strong>Mrs. Neelam &amp; Mr. Subhash Gupta</strong><br>
+                        <em>Chachiji  &amp; Chachaji</em></p>
+                    <p><strong>Mrs. Sangeeta &amp; Mr. Jitendra Varshney</strong><br>
+                        <em>Bhabhi  &amp; Bhaiya</em></p>
+                    <p><strong>Late Mrs. Kanti Devi  &amp; Mr. Murari lal</strong><br>
+                        <em>Buaji  &amp; Fufaji</em></p>
+                    <p><strong> Mrs. Radha Rani  &amp; Mr. Rajkumar Varshney</strong><br>
+                        <em>Buaji  &amp; Fufaji</em></p>
+                    <p><strong>Mrs. Rajkumari  &amp;Late Mr. Promod Varshney</strong><br>
+                        <em>Buaji  &amp; Fufaji</em></p>
+                    </div>
+                </div><!--end col-md-4-->
+            
+                <div class="col-md-4">
+                    <div class="godfathers-text-men">
+                    <p><strong>Mrs. Kunti Devi &amp;Late Mr. Satish Chand </strong><br>
+                        <em>Buaji  &amp; Fufaji</em></p>
+                    <p><strong>Mrs. Sunita &amp; Mr. Sonpal Gupta </strong><br>
+                        <em>Buaji  &amp; Fufaji</em></p>
+                    <p><strong>Mrs. Maya &amp; Mr. Jagdish Prasad Varshney</strong><br>
+                        <em>Mausiji  &amp; Mausaji</em></p>
+                    <p><strong>Mrs. Mithlesh &amp; Mr. Manohar lal Varshney</strong><br>
+                        <em>Mausiji  &amp; Mausaji</em></p>
+                    <p><strong>Mrs. Mithlesh &amp; Mr. Rupendra Gupta</strong><br>
+                        <em>Mausiji  &amp; Mausaji</em></p>
+                        </div>
+                </div><!--end col-md-4-->
+                <div class="col-md-2"></div>
+            </div>
+    </section>
+</section>
 <section id="eng-pics" class="section-padding">
     <div class="container-fluid">
         <div class="row">
@@ -574,6 +883,24 @@
     </div>-->
 </section>
 
+<!-- <section id="instagram" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>A picture is worth a thousand words!</h3>
+                <p>Help us capture the moment, tag your photos with the hashtag
+                    <a href="https://instagram.com/explore/tags/SaurabhandAditi/" target="_blank">#SaurabhAndAditi</a>
+                </p>
+            </div>
+        </div>
+        <div class="row section-border wp7">
+            <div class="col-md-4 col-md-offset-4">
+                <img src="img/iphone_instagram.jpg">
+            </div>
+        </div>
+    </div>
+</section> -->
+
 <section id="video-bg" class="">
     <div id="bgndVideo" class="player"
          data-property="{videoURL:'https://youtu.be/MhJvQJS6tao',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:97, stopAt:165, opacity:1}">
@@ -709,7 +1036,26 @@
         </div>
     </div>
 </footer>
+<script>
+    function ladkewale(){
+        var toggle = document.getElementById("toggle");
+        var toggling = document.getElementById("toggling");
+        var ladkewale = document.getElementById("ladkewale");
 
+        toggle.style.display = "block";
+        toggling.style.display = "none";
+        ladkewale.style.display = "block";
+    }
+    function ladkiwale(){
+        var toggle = document.getElementById("toggle");
+        var toggling = document.getElementById("toggling");
+        var ladkiwale = document.getElementById("ladkiwale");
+
+        toggle.style.display = "block";
+        toggling.style.display = "none";
+        ladkiwale.style.display = "block";
+    }
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 <script src="js/jquery.fancybox.pack.js"></script>
