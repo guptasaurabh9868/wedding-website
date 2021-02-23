@@ -36,9 +36,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <style>
-        #ladkiwale, #ladkewale, #toggle{
+        #ladkewale{
+            background: url(img/groom_invite.jpg);
+            display:none;
+            background-position: center;
+            background-size:cover;
+
+        }
+        #ladkiwale{
+            background: url(img/bride_invite.jpg);
+            display:none;
+            background-position: center;
+            background-size:cover;
+        }
+        
+        #toggle{
             display: none;
+        }
+        #invitation{
+            background: url('img/bg_pink.jpg');
+            background-position: center;
+            background-size:cover;
+        }
+        .groom-icon{
+            background-size: contain;
+            background-image: url('img/grrom_icon.png') ;
+            background-position:left;
+            background-repeat: no-repeat;
+            padding: 10px 15px 10px 55px;
+            font-family: 'Indie Flower', cursive;
+            font-size:20px;
+        }
+        .bride-icon{
+            background-size: contain;
+            background-image: url('img/grrom_icon.png') ;
+            background-position:right;
+            background-repeat: no-repeat;
+            padding: 10px 55px 10px 15px;
+            font-family: 'Indie Flower', cursive;
+            font-size:20px;
         }
     </style>
 </head>
@@ -103,8 +148,8 @@
         
         <div class="row">
             <div class="col-md-12 text-center" >
-                <h3>We are getting hitched</h3>
-                <p style= "font-family: 'Dancing Script', cursive; font-size: 20px; margin-top: 10%;"> The date is <b style="font-size:40px;">2<sup>nd</sup> of May '21 </b> and we would like you to be a part of
+                <h3 style="font-family: 'Aclonica', sans-serif;">We are getting hitched</h3>
+                <p style= "font-family: 'Akaya Kanadaka', cursive; font-size: 20px; margin-top: 8%;"> The date is <b style="font-size:40px;">2<sup>nd</sup> of May '21 </b> and we would like you to be a part of
                     it.</p>
             </div>
         </div>
@@ -114,11 +159,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-2"></div>
-            <div class="col-md-2 col-sm-4 col-xs-6" style="padding-left: 55px">
-                <button type="button" class="btn btn-outline-primary"  onclick="ladkewale()"><i>Ladkewale</i></button>
+            <div class="col-md-2 col-sm-4 col-xs-6" style="padding-left: 55px;">
+                <button type="button" class="btn btn-outline-primary groom-icon"  onclick="ladkewale()"><b>Ladkewale</b></button>
             </div>
             <div class="col-md-2 col-sm-4 col-xs-6">
-                <button type="button" class="btn btn-outline-danger" style="position: relative;" onclick="ladkiwale()"><i>Ladkiwale</i></button>
+                <button type="button" class="btn btn-outline-danger bride-icon" style="position: relative;" onclick="ladkiwale()"><b>Ladkiwale</b></button>
             </div>
             <div class="col-md-4 col-sm-2"></div>
         </div>
