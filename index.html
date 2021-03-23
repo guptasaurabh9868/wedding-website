@@ -1,12 +1,5 @@
 <!doctype html>
-<!--[if lt IE 7]>
-<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>
-<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>
-<html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -16,7 +9,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Saurabh & Aditi getting hitched">
     <meta property="og:description" content="We would like to invite you to our big day.">
-    <!-- <meta property="og:image" content="https://wedding.ramswaroop.me/img/pg"> -->
+    <meta property="og:image" content="img/logo.png">
     <meta property="og:type" content="website">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="100x84" href="favicon-100x84.png">
@@ -32,70 +25,13 @@
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-    <style>
-        #ladkewale{
-            background: url(img/groom_invite.jpg);
-            display:none;
-            background-position: center;
-            background-size:cover;
-
-        }
-        #ladkiwale{
-            background: url(img/bride_invite.jpg);
-            display:none;
-            background-position: center;
-            background-size:cover;
-        }
-        
-        #toggle{
-            display: none;
-        }
-        #invitation{
-            background: url('img/bg_pink.jpg');
-            background-position: center;
-            background-size:cover;
-        }
-        .groom-icon{
-            background-size: contain;
-            background-image: url('img/grrom_icon.png') ;
-            background-position:left;
-            background-repeat: no-repeat;
-            padding: 10px 15px 10px 55px;
-            font-family: 'Indie Flower', cursive;
-            font-size:20px;
-        }
-        .bride-icon{
-            background-size: contain;
-            background-image: url('img/bride_icon.jpeg') ;
-            background-position:right;
-            background-repeat: no-repeat;
-            padding: 10px 55px 10px 15px;
-            font-family: 'Indie Flower', cursive;
-            font-size:20px;
-        }
-        .card-img-top{
-            width: 175px; height: 150px; padding: 10px 10px 10px 10px;
-        }
-        .cards{
-            padding:5%;
-            background: url('img/cards_bg.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/personal.css">
 </head>
 <body id="top">
 <!--[if lt IE 8]>
@@ -168,14 +104,12 @@
 <section id="toggling">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-2"></div>
-            <div class="col-md-2 col-sm-4 col-xs-6" style="padding-left: 10px;">
+            <div class="col-md  col-sm col-xs text-center">
                 <button type="button" class="btn btn-outline-primary groom-icon"  onclick="ladkewale()"><b>Ladkewale</b></button>
             </div>
-            <div class="col-md-2 col-sm-4 col-xs-6">
+            <div class="col-md col-sm col-xs text-center" >
                 <button type="button" class="btn btn-outline-danger bride-icon" style="position: relative;" onclick="ladkiwale()"><b>Ladkiwale</b></button>
             </div>
-            <div class="col-md-4 col-sm-2"></div>
         </div>
     </div>
 </section>
@@ -184,7 +118,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h3 class="header" style="font-family: 'Dancing Script', cursive; font-size: 40px;">Invitation</h3>
+                    <h3 class="header" style="font-size: 40px;">Invitation</h3>
                 </div>
             </div>
             <div class="row">
@@ -507,7 +441,7 @@
             <div class="row">
                 <div class="col-md-5 hidden-sm hidden-xs">
                     <h2 class="wp1" style="font-family: 'Dancing Script', cursive; font-size: 30px;">Aditi</h2>
-                    <p class="wp1" style="font-family: 'Dancing Script', cursive; font-size: 20px;">(GrandDaughter of Late Shrimati Shanti Devi & Late Shri Ramji lal)</p>
+                    <p class="wp1" style="font-family: 'Dancing Script', cursive; font-size: 20px;">(Grand Daughter of Late Shrimati Shanti Devi & Late Shri Ramji lal)</p>
                 </div>
                 <div class="col-md-2 hidden-sm hidden-xs">
                     <p style="font-family: 'Dancing Script', cursive; font-size: 30px; padding-top: 100px;">
