@@ -1,5 +1,5 @@
 #ladkewale{
-    background: url(img/groom_invite.jpg);
+    background: url('img/');
     display:none;
     background-position: center;
     background-size:cover;
@@ -20,24 +20,6 @@
     background-position: center;
     background-size:cover;
 }
-#groom-icon{
-    background-size: contain;
-    background-image: url('img/groom_icon.png') ;
-    background-position:left;
-    background-repeat: no-repeat;
-    padding: 10px 15px 10px 55px;
-    font-family: 'Indie Flower', cursive;
-    font-size:20px;
-}
-#bride-icon{
-    background-size: contain;
-    background-image: url('img/bride_icon.jpeg') ;
-    background-position:right;
-    background-repeat: no-repeat;
-    padding: 10px 55px 10px 15px;
-    font-family: 'Indie Flower', cursive;
-    font-size:20px;
-}
 .card-img-top{
     align-self: center;
     width: 220px;
@@ -53,3 +35,5 @@
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.icon-img{vertical-align:middle;width: 30px; height: 35px; margin: 0px 20px 0px 0px;}
