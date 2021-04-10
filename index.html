@@ -813,7 +813,7 @@
     </div>
 </section> -->
 
-<section id="video-bg" class="">
+<section id="video-bg" class="hidden-xs hidden-sm">
     <div id="bgndVideo" class="player"
          data-property="{videoURL:'https://youtu.be/MhJvQJS6tao',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:97, stopAt:165, opacity:1}">
     </div>
@@ -829,115 +829,48 @@
         <p>It's way easier than you think!</p>
     </div>
     <div id="map-canvas"></div>
-        <div id="map-content-wrapper" class="container pointer-events-none">
-            <div class="row">
-                <div class="col-xs-offset-1"></div>
-                <div class="col-10">
-                    <div class="text-center">
-                        <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                            <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+    <div id="map-content-wrapper" class="container pointer-events-none">
+        <div class="row">
+            <div class="col-xs-offset-1"></div>
+            <div class="col-10">
+                <div class="text-center">
+                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
+                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
+                    </div>
+                </div>
+                <div id="map-content" class="pointer-events-auto">
+                    <div class="row">
+                        <div class="col-md-6 col-6">
+                            <h5>Devansh Greens</h5>
+                            <p>NH-2, Mathura Road, Kail Gaon, Faridabad, Haryana 121004, India</p>
+                        </div>
+                        <div class="col-md-6 col-6">
+                            <h5>Mr. Tarun</h5>
+                            <p><i class="fa fa-mobile"></i><a href="tel://+919466037839"> 9466037839</a><br>
+                                <i class="fa fa-mobile"></i><a href="tel://+919868974938"> 9868974938</a></p>
                         </div>
                     </div>
-                    <div id="map-content" class="pointer-events-auto">
-                        <div class="row">
-                            <div class="col-md-6 col-6">
-                                <h5>Devansh Greens</h5>
-                                <p>NH-2, Mathura Road, Kail Gaon, Faridabad, Haryana 121004, India</p>
-                            </div>
-                            <div class="col-md-6 col-6">
-                                <h5>Mr. Tarun</h5>
-                                <p><i class="fa fa-mobile"></i><a href="tel://+919466037839"> 9466037839</a><br>
-                                    <i class="fa fa-mobile"></i><a href="tel://+919868974938"> 9868974938</a></p>
-                            </div>
+                    <div class="row text-center">
+                        <div class="col-6 col-md-6">
+                            <a class="btn btn-fill btn-small" style="background-color: black;"
+                            href="https://m.uber.com/ul/?action=setPickup&client_id=ooezUin9WLgZalwmPpMSFqwAbBPOv5al&pickup=my_location&dropoff[formatted_address]=DEVANSH%20GREENS%2C%20NH%2D2%2C%20Mathura%20Road%2C%20Kail%20Gaon%2C%20Faridabad%2C%20Haryana%20121004%2C%20India&dropoff[latitude]=28.29212507943308&dropoff[longitude]=77.29685458207489", ><i class="fa fa-taxi"></i>&nbsp;&nbsp;
+                            Book Uber</a>
                         </div>
-                        <div class="row text-center">
-                            <div class="col-6 col-md-6">
-                                <a class="btn btn-fill btn-small" style="background-color: black;"
-                                href="https://m.uber.com/ul/?action=setPickup&client_id=ooezUin9WLgZalwmPpMSFqwAbBPOv5al&pickup=my_location&dropoff[formatted_address]=DEVANSH%20GREENS%2C%20NH%2D2%2C%20Mathura%20Road%2C%20Kail%20Gaon%2C%20Faridabad%2C%20Haryana%20121004%2C%20India&dropoff[latitude]=28.29212507943308&dropoff[longitude]=77.29685458207489", ><i class="fa fa-taxi"></i>&nbsp;&nbsp;
-                                Book Uber</a>
-                            </div>
-                            <div class="col-6 col-md-6">
-                                <a class="btn btn-accent btn-small btn-secondary" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show map</a>
-                            </div>
+                        <div class="col-6 col-md-6">
+                            <a class="btn btn-accent btn-small btn-sec" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show map</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-offset-1"></div>
             </div>
         </div>
+    </div>
+    </div>
     
 </section>
 
-<section class="rsvp text-center" id="rsvp">
-
-    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                    </button>
-                    <div class="section-padding">
-                        <h3>Thank you!</h3>
-                        <p>We are glad to see you join us on our big day.</p>
-                        <div id="add-to-cal"></div>
-                    </div>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3">
-                <h3>What are you waiting for?</h3>
-                <p>We would greatly appreciate if you could RSVP before 28<sup>th</sup> of April '21</p>
-                <form id="rsvp-form" class="rsvp-form"
-                      action=""
-                      method="POST">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
-                                                                     placeholder="Your email"
-                                                                     required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                 placeholder="Your name"
-                                                                 required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
-                                                                  placeholder="Husband/Wife or kids"
-                                                                  required>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
-                                                                class="" min="0"
-                                                                placeholder="Invite code"
-                                                                required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
-                    </div>
-                    <button class="btn-fill rsvp-btn">
-                        Yes,
-                        that's me!
-                    </button>
-                </form>
-            </div>
-        </div>
+<section id="timeleft">
+    <div class="container-fluid timeleft">
+        <h1> Time left </h1>
     </div>
 </section>
 

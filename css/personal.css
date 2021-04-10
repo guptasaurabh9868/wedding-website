@@ -37,3 +37,8 @@
 }
 
 .icon-img{vertical-align:middle;width: 30px; height: 35px; margin: 0px 20px 0px 0px;}
+
+.timeleft{
+    padding: 10px 10px 10px 10px;
+    background-color: #90909090;
+}
