@@ -16,6 +16,7 @@
     <link rel="icon" type="image/png" sizes="150x126" href="favicon-150x126.png">
     <link rel="manifest" href="manifest.json">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" href="css/flipclock.css">
     <link rel="stylesheet" href="css/personal.css">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -26,7 +27,8 @@
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/flipclock.min.js"></script>
 </head>
 <body id="top">
 <!--[if lt IE 8]>
@@ -868,7 +870,8 @@
 
 <section id="timeleft">
     <div class="container-fluid timeleft">
-        <h1> Time left </h1>
+        <p class="timelefttext"> Time left till the happy event</p>
+        <div class="clock" style="margin:2em;"></div>
     </div>
 </section>
 
@@ -882,6 +885,26 @@
         </div>
     </div>
 </footer>
+<script type="text/javascript">
+    var clock;
+
+    $(document).ready(function() {
+
+        // Grab the current date
+        var currentDate = new Date();
+
+        // Set some date in the past. In this case, it's always been since Jan 1
+        var eventDate  = new Date('2021-05-02');
+
+        // Calculate the difference in seconds between the future and current date
+        var diff =  eventDate.getTime() / 1000 - currentDate.getTime() / 1000;
+
+        // Instantiate a coutdown FlipClock
+        clock = $('.clock').FlipClock(diff, {
+            clockFace: 'DailyCounter'
+        });
+    });
+</script>
 <script>
     function ladkewale(){
         var toggle = document.getElementById("toggle");
@@ -902,15 +925,15 @@
         ladkiwale.style.display = "block";
     }
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 <script src="js/jquery.fancybox.pack.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
+<script src="js/jquery.countdown.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
 <script src="node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.min.js"></script>
@@ -933,5 +956,11 @@
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
 </script>
+<!-- <script type="text/javascript">
+    $("#getting-started")
+    .countdown("2021/05/02", function(event) {
+      $(this).text(
+        event.strftime('%D Days & %H : %M :  %S '))});
+  </script> -->
 </body>
 </html>

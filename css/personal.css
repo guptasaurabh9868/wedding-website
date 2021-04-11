@@ -39,7 +39,11 @@
 .icon-img{vertical-align:middle;width: 30px; height: 35px; margin: 0px 20px 0px 0px;}
 
 .timeleft{
+    text-align: center;
     margin: 60px 0px 90px 0px;
     padding: 150px 0px 150px 0px;
     background-color: #90909090;
+}
+#getting-started{
+    font-size: 40px;
 }
