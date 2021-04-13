@@ -45,3 +45,12 @@
     background-color: #90909090;
     font-size: 25px;
 }
+label{
+    display: inline-block;
+    pointer-events: none;
+}
+#lagan, #mehandi, #disco, #haldi, #bus, #dinner, #varmala{
+    pointer-events: none;
+    width: 100px;
+    height: 80px;
+}
