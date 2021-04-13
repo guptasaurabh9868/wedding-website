@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/flipclock.min.js"></script>
 </head>
 <body id="top">
@@ -46,7 +46,7 @@
                             <section id="toggle">
                                 <li><a href="#intro">Invitation</a></li>
                                 <li><a href="#events">Golden Moments</a></li>
-                                <li><a href="#SpecInvitation">Special Invitation</a></li>
+                                <li id="Specs"><a href="#SpecInvitation">Special Invitation</a></li>
                                 <li><a href="#family">Family</a></li>
                                 <li><a href="#extendedfamily">Extended Family</a></li>
                             </section>
@@ -54,7 +54,6 @@
                         <ul class="member-actions">
                             <li><a href="#eng-pics" class="login">Gallery</a></li>
                             <li><a href="#map" class="login">Venue</a></li>
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -537,44 +536,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row section-padding" id="SpecialInvitation">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
-                        <i class="fa fa-barcode"></i>&nbsp;&nbsp;Special Invitation from our family's baby doll
-                    </a>
-                </div>
-            </div>
-            <!--<div class="row">
-                <div class="col-xs-12 section-border section-padding">
-                </div>
-            </div>-->
         </div>
-
-        <div id="dc-modal" class="modal fade" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                        </button>
-                        <h3 class="text-center section-padding">Samisha The Doll</h3>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img src="img/samisha1.jpeg" style="height: 100%; width: 50%; display: block; margin-left: auto; margin-right: auto;">
-                                <p style="display: block; text-align: center; margin-top: 10%; padding-bottom: 0px;">Nanhe Nanhe Pawn Hai Mere, Kese Aayu Bulane ko,</br> Mele Mamu Ki Chhadi Mein Bhool Na Jana Aane Ko.</p>
-                            </div>
-                        </div>
-                        <h3 class="text-center section-padding">Prince Pratham & Princess Kanak</h3>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <img src="img/samisha1.jpeg" style="height: 100%; width: 50%; display: block; margin-left: auto; margin-right: auto;">
-                                <p style="display: block; text-align: center; margin-top: 10%; padding-bottom: 0px;">Nanhe Nanhe Pawn Hai Mere, Kese Aayu Bulane ko,</br> Mele Mamu Ki Chhadi Mein Bhool Na Jana Aane Ko.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
-
     </section>
 
     <section id="family" class="section-padding">
@@ -901,12 +863,15 @@
         var toggle = document.getElementById("toggle");
         var toggling = document.getElementById("toggling");
         var ladkiwale = document.getElementById("ladkiwale");
+        var specs = document.getElementById("Specs");
 
         toggle.style.display = "block";
+        specs.style.display = "none";
         toggling.style.display = "none";
         ladkiwale.style.display = "block";
     }
 </script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

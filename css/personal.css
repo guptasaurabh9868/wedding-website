@@ -1,5 +1,4 @@
 #ladkewale{
-    background: url('img/');
     display:none;
     background-position: center;
     background-size:cover;
@@ -16,7 +15,6 @@
     display: none;
 }
 #invitation{
-    background: url('img/bg_pink.jpg');
     background-position: center;
     background-size:cover;
 }
