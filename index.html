@@ -393,7 +393,11 @@
             </div>
         </div>
     </section>
+    <audio id= "ladkewale_audio">
+        <source src="audio/ladke.mp3" type="audio/mp3">
+    </audio>
 </section>
+
 <section id="ladkiwale">
     <section id="intro">
         <div class="container">
@@ -608,6 +612,11 @@
             </div>
         </div>
     </section>
+
+    <audio id= "ladkiwale_audio">
+        <source src="audio/ladki.mp3" type="audio/mp3">
+    </audio>
+
 </section>
 <section id="eng-pics" class="section-padding">
     <div class="container-fluid">
@@ -869,19 +878,23 @@
         var toggle = document.getElementById("toggle");
         var toggling = document.getElementById("toggling");
         var ladkewale = document.getElementById("ladkewale");
+        var audio = document.getElementById("ladkewale_audio");
 
         toggle.style.display = "block";
         toggling.style.display = "none";
         ladkewale.style.display = "block";
+        audio.play();
     }
     function ladkiwale(){
         var toggle = document.getElementById("toggle");
         var toggling = document.getElementById("toggling");
         var ladkiwale = document.getElementById("ladkiwale");
+        var audio = document.getElementById("ladkiwale_audio");
 
         toggle.style.display = "block";
         toggling.style.display = "none";
         ladkiwale.style.display = "block";
+        audio.play();
     }
 </script>
 
