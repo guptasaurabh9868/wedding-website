@@ -12,11 +12,67 @@
 
 #toggle{
     display: none;
+    background-image: url('../img/BG6.jpg');
+}
+#eng-pics{
+    background-position: center;
+    background-size:cover;
+    background-image: url('../img/BG6.jpg');
+}
+#map{
+    background-position: center;
+    background-size:cover;
+    background-image: url('../img/BG6.jpg');
+}
+#map-content{
+    background-position: center;
+    background-size:cover;
+    background-image: url('../img/BG6.jpg');
+}
+#timeleft{
+    background-position: center;
+    background-size:cover;
+    background-image: url('../img/BG7.jpg');
+}
+.card{
+    background-position: center;
+    background-size:cover;
+    background-image: url('../img/BG8.jpg');
+}
+#events{
+    background-position: center;
+    background-size:cover;
+    background-image: url('../img/BG6.jpg');
+}
+#SpecInvitation{
+    background-position: center;
+    background-size:cover;
+    background-image: url('../img/BG6.jpg');
+}
+.container-fluid{
+    background-position: center;
+    background-size:cover;
+    background-image: url('../img/BG6.jpg');
+}
+#family{
+    background-position: center;
+    background-size:cover;
+    background-image: url('../img/BG6.jpg');
+}
+#extendedfamily{
+    background-position: center;
+    background-size:cover;
+    background-image: url('../img/BG6.jpg');
 }
 #invitation{
     background-position: center;
     background-size:cover;
-}
+    background-image: url('../img/BG6.jpg');
+    font-weight: 300;
+    font-size: 3em;
+    color: #580404;
+    font-family: "neuton", serif;
+    }
 .card-img-topp{
     align-self: center;
     padding: 10px 20px 10px 20px;
