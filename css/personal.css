@@ -150,3 +150,9 @@ p{
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.datecard{
+    background-origin: padding-box;
+}
+.functioncard{
+    background-color: #cfffc5;
+}
