@@ -136,3 +136,17 @@ p{
     margin-left: auto;
     margin-right: auto;
 }
+
+.left{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+.centre{
+    text-align: center;
+}
+.eventfont{
+    font-size: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
