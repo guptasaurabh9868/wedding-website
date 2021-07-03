@@ -12,12 +12,12 @@
 
 #toggle{
     display: none;
-    background-image: url('../img/BG6.jpg');
 }
 #eng-pics{
     background-position: center;
     background-size:cover;
     background:#3b2529
+
 }
 #eng-pics h3 {
 color:white;
@@ -29,12 +29,17 @@ color:white;
     background-attachment:fixed;
 
 }
-#map h3, #map p, #map h1, #map h2, #map h5, #map i, #map a{
-color: white;
+#White h3, #White p, #White h1, #White h2, #White h5, #White i, #White a{
+color: White;
 }
  #map h3
  { font-size:24px;
  }
+ #events h2, #events p, #events h1, #events h2, #events h5, #events i, #events label{
+ color: White;
+ }
+#place h5{
+color:black}
 
 #timeleft{
     background-position: center;
@@ -51,27 +56,36 @@ color: white;
     background-size:cover;
     background-image: url('../img/Move.jpg');
     background-attachment:fixed;
+    color: White;
 }
-#SpecInvitation{
+
+#extendedfamily{
     background-position: center;
     background-size:cover;
-    background-image: url('../img/BG6.jpg');
+   color: White;
 }
+#extendedfamily p,extendedfamily h2
+{
+color:white;}
+#family h1
+{
+color:white;}
+#intro h3,#intro h2,#intro p
+{
+color:black;}
+#Total{
+    background-position: center;
+    background-size:cover;
+    background-image: url('../img/IMG_5561.jpg');
+    background-attachment:fixed;
+}
+
 .container-fluid{
     background-position: center;
     background-size:cover;
 
 }
-#family{
-    background-position: center;
-    background-size:cover;
-    background-image: url('../img/BG6.jpg');
-}
-#extendedfamily{
-    background-position: center;
-    background-size:cover;
-    background-image: url('../img/BG6.jpg');
-}
+
 #invitation{
     background-position: center;
     background-size:cover;
