@@ -12,7 +12,10 @@
 
 #toggle{
     display: none;
-    background-image: url('../img/BG6.jpg');
+}
+#toggling{
+    
+    background-image: url('../img/bg_hd_1.jpg');
 }
 #eng-pics{
     background-position: center;
@@ -67,7 +70,7 @@
 #invitation{
     background-position: center;
     background-size:cover;
-    background-image: url('../img/BG6.jpg');
+    background-image: url('../img/bg_hd_4.jpg');
     font-weight: 300;
     font-size: 3em;
     color: #580404;
