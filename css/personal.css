@@ -25,12 +25,12 @@ color:white;
 #map{
     background-position: center;
     background-size:cover;
-    background-image: url('../img/PHOTO-2021-07-01-08-19-14.jpg');
+    background-image: url('../img/IMG_5243.jpg');
     background-attachment:fixed;
 
 }
 #White h3, #White p, #White h1, #White h2, #White h5, #White i, #White a{
-color: White;
+color: Black;
 }
  #map h3
  { font-size:24px;
@@ -54,8 +54,9 @@ color:black}
 #events{
     background-position: center;
     background-size:cover;
-    background-image: url('../img/Move.jpg');
+    background-image: url('../img/PHOTO-2021-07-01-08-19-14.jpg');
     background-attachment:fixed;
+    background-opacity:0.3;
     color: White;
 }
 
@@ -83,6 +84,7 @@ color:black;}
 .container-fluid{
     background-position: center;
     background-size:cover;
+    background-image: url('../img/BG6.jpg');
 
 }
 
