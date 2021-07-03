@@ -156,3 +156,9 @@ p{
 .datecard{
     background-origin: padding-box;
 }
+.golden_moments{
+    border: 10px solid black;
+    border-radius: 40px;
+    padding: 9px 86px 55px 6px;
+    
+}
