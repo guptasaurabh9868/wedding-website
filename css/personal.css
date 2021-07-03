@@ -15,7 +15,7 @@
 }
 #toggling{
     
-    background-image: url('../img/bg_hd_1.jpg');
+    background-image: url('../img/bg_hd_3.jpg');
 }
 #eng-pics{
     background-position: center;
@@ -45,7 +45,7 @@
 #events{
     background-position: center;
     background-size:cover;
-    background-image: url('../img/BG6.jpg');
+    background-image: url('../img/bg_hd_7.jpg');
 }
 #SpecInvitation{
     background-position: center;
@@ -116,7 +116,7 @@ label{
     font-weight: 100;
 }
 #intro{
-    background-image: url('../img/groom_invite.jpg');
+    background-image: url('../img/bg_hd_5.jpg');
     display: block;
 }
 p{
@@ -155,7 +155,4 @@ p{
 }
 .datecard{
     background-origin: padding-box;
-}
-.functioncard{
-    background-color: #cfffc5;
 }
