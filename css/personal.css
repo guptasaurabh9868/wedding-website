@@ -20,18 +20,31 @@
 #eng-pics{
     background-position: center;
     background-size:cover;
-    background-image: url('../img/BG6.jpg');
+    background:#3b2529
+
+}
+#eng-pics h3 {
+color:white;
 }
 #map{
     background-position: center;
     background-size:cover;
-    background-image: url('../img/BG6.jpg');
+    background-image: url('../img/IMG_5243.jpg');
+    background-attachment:fixed;
+
 }
-#map-content{
-    background-position: center;
-    background-size:cover;
-    background-image: url('../img/BG6.jpg');
+#White h3, #White p, #White h1, #White h2, #White h5, #White i, #White a{
+color: Black;
 }
+ #map h3
+ { font-size:24px;
+ }
+ #events h2, #events p, #events h1, #events h2, #events h5, #events i, #events label{
+ color: White;
+ }
+#place h5{
+color:black}
+
 #timeleft{
     background-position: center;
     background-size:cover;
@@ -45,32 +58,48 @@
 #events{
     background-position: center;
     background-size:cover;
-    background-image: url('../img/bg_hd_7.jpg');
+    background-image: url('../img/PHOTO-2021-07-01-08-19-14.jpg');
+    background-attachment:fixed;
+    background-opacity:0.3;
+    color: White;
 }
 #SpecInvitation{
     background-position: center;
     background-size:cover;
     background-image: url('../img/BG6.jpg');
 }
+
+#extendedfamily{
+    background-position: center;
+    background-size:cover;
+   color: White;
+}
+#extendedfamily p,extendedfamily h2
+{
+color:white;}
+#family h1
+{
+color:white;}
+#intro h3,#intro h2,#intro p
+{
+color:black;}
+#Total{
+    background-position: center;
+    background-size:cover;
+    background-image: url('../img/IMG_5561.jpg');
+    background-attachment:fixed;
+}
+
 .container-fluid{
     background-position: center;
     background-size:cover;
     background-image: url('../img/BG6.jpg');
+
 }
-#family{
-    background-position: center;
-    background-size:cover;
-    background-image: url('../img/BG6.jpg');
-}
-#extendedfamily{
-    background-position: center;
-    background-size:cover;
-    background-image: url('../img/BG6.jpg');
-}
+
 #invitation{
     background-position: center;
     background-size:cover;
-    background-image: url('../img/bg_hd_4.jpg');
     font-weight: 300;
     font-size: 3em;
     color: #580404;
@@ -96,7 +125,7 @@ h2{
 
 .timelefttext{
     text-align: center;
-    margin: 60px 0px 90px 0px;
+    margin: 0px 0px 0px 0px;
     padding: 150px 0px 150px 0px;
     background-color: #90909090;
     font-size: 25px;
